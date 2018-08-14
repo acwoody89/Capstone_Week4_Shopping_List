@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capstone: Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1> HECTIC ECLECTIC SHOPPING MALL</h1>
+    
+    <div id="itemList">
+      <div class = "box">
+        Picachu Mug $5 <button id =button0 onclick ="addCart('Pikachu Mug', 5);">Add To Cart</button>
+        <br>
+        <button id= "plus" class="">+</button>
+        <button id="minus" class="">-</button>
+        <br>
+        <span id = "quant">#</span>
+      </div>
+      
+      <div class = "box">
+      Sunglasses <button id =button1 onclick="addCart('sun glasses',15.00);">Add To Cart</button> <br>
+        <button id= "plus1" class="plus">+</button>
+        <button id="minus1" class="minus">-</button><br>
+        <span id = "quant">#</span>
+      </div>
+      <br>
+      <div>
+      NorthFace Yellow Backpack <button id =button2 onclick="addCart('NorthFace Yellow Backpack',75.00);">Add To Cart</button>
+        <button id= "plus1" class="plus">+</button>
+        <button id="minus1" class="minus">-</button>
+        <span>#</span>
+      </div>
+      <br>
+      Laptop <button id =button3 onclick="addCart('Laptop',750.00);">Add To Cart</button>
+      <button id= "plus" class="plus">+</button>
+      <span id="quant" class="quant">#</span>
+      <button>-</button>
+      <br>
+      Blue Pen <button id =button4 onclick="addCart('blue pen',3.00);">Add To Cart</button>
+    </div>
+    
+    <br>
+    
+    <div id = "button">
+      <button id="totalButton" onclick = "getTotal();">Checkout</button>
+      <button id="resetButton" onClick = "resetAll();">Reset</button>
+    </div>
+    
+    <div id = "checkOut">
+     <br>
+    </div>
+    <p>
+      <span id="total" class="total">Total:____</span>
+    </p>
+    <script src = "script.js"></script>
+  </body>
+</html>
